@@ -1,0 +1,247 @@
+
+:root {
+    --primaryfont: "Poppins", sans-serif;
+    --2ndfont: "PT Sans", sans-serif;
+    --secondaryColor: #353535;
+    --yellowColor: yellow;
+    --whiteColor: black;
+
+  }
+
+/* cmm css */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+  ul,ol {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  h1,h2,h3,h4,h5,h6,ul,p,span,ol {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: var(--primaryfont);
+  }
+
+
+  .container{
+
+    margin: auto;
+    width: 1170px;
+  }
+
+
+  .row{
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* cmm css end */
+
+
+
+/* manu */
+
+
+
+nav ul , ol {
+    list-style: none;
+}
+
+nav{
+    
+    background: linear-gradient(to right, #dce35b, #45b649); 
+    
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+nav ol li{
+    display: inline-block;
+    padding: 20px;
+}
+
+
+nav ol li a{
+
+    text-decoration: none;
+    font-family: cursive;
+    display: block;
+    transform: 0.3s;
+    padding: 5px 15px;
+    
+   
+    font-size: 20px;
+    
+}
+
+nav ol li a:hover{
+
+    color: #c80fa9;
+}
+.back{
+
+    background: linear-gradient(to right, #1c92d2, #f2fcfe);
+}
+.para{
+    padding: 50px;
+    display: inline-block;
+    margin: 20px;
+    color: var(--secondaryColor);
+}
+
+.para h1 {
+    margin-bottom: 40px;
+}
+.heading{
+    
+    text-align: center;
+    font-family: 'Headland One', serif;
+    transition: 0.3s;
+    
+}
+
+.heading:hover{
+    color: red;
+}
+
+.first{
+    font-size: 20px;
+    
+    transform: 0.3s;
+
+
+}
+/* 
+.first:hover{
+    background: linear-gradient(to right, #d3959b, #bfe6ba); 
+}
+.last{
+    font-size: 20px;
+    transform: 0.3s;
+}
+.last:hover{
+    background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+} */
+
+
+
+/* backToTheTop */
+
+.backToTheTop{
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    
+    background-image: conic-gradient(blue 0% 0%,white 0% 0% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .backToTheTop span{
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: inline-block;
+ }
+
+/* backToTheTop end */
+
+
+#counterId{
+
+    padding: 50px 0;
+
+}
+
+#counterId .row{
+    text-align: center;
+    justify-content: center;
+}
+
+
+.counter{
+    
+    border: 2px solid var(--yellowColor);
+    border-radius: 10px;
+    width: 100px;
+    height: 80px;
+    background-color: rgb(124, 30, 255);
+    margin: 0 45px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 35px;
+    color: var(--whiteColor);
+
+}
+
+
+/* darkmode */
+
+
+
+.iconDarkMode{
+    top: 120px;
+    position: fixed;
+    right: 100px;
+}
+
+.darkMode{
+    background-color: #353535;
+    --whiteColor: white;
+    --secondaryColor: white;
+    transition: 0.25s;
+    
+}
+
+.iconDarkMode button {
+    width: 40px;
+    border-radius: 40%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: none;
+    
+    overflow: hidden;
+}
+
+.iconDarkMode button span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 20px;
+}
+
+.iconDarkMode button span.sun{
+    background-color: rgb(178, 173, 22);
+    transition: 0.3s cubic-bezier(0,1.25,.71,1.29);
+}
+.iconDarkMode button span.moon{
+    background-color: rgb(6, 11, 28);
+    color: white;
+}
+
+
+
+body.darkMode .iconDarkMode button .sun{
+    margin-top: -100%;
+}
+
+
